@@ -1,0 +1,272 @@
+/* Цвет основного текста #212121 */
+/* Вторичный цвет текста #757575 */
+/* Фон кнопок #F5F4FA */
+/* Акцент #2196F3 */
+/* Белый на выделенных кнопках #FFFFFF */
+/* Контакты в Футере rgba(255, 255, 255, 0.6) */
+/* Фон на Чем занимаемся rgba(47, 48, 58, 0.8) */
+/* Фон футера #2F303A */
+/* Копирайт rgba(255, 255, 255, 0.4) */
+/* Вторичный цвет фона #F5F4FA */
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+}
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.logoone {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+.logotwo {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.auth-nav .link {
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+.logothree {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+.logofour {
+  color: var(--white-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+/* Меняю цвет контактов в Футере */
+.adr {
+  color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+.adr-mail {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+.adr-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+.soc-title {
+  color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.maillink-title {
+  color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* Меняю цыет текста в Герое */
+.hero-title {
+  color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-link {
+  color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* Добавляю повторяющиеся цвета цвет внутри некоторых секций */
+.section-title {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.section-description {
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+.maintitle {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Крашу подписи в Чем мы занимаемся */
+.whatwedo {
+  color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* Уникальные стили для portfolio.html */
+.button-text {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.button-text:hover,
+.button-text:focus {
+  color: var(--white-color);
+}
+/* Отмечаю цветом однотипные фрагменты текста */
+.worklist-text {
+  color: rgba(255, 255, 255, 1);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.56;
+  /* or 156% */
+
+  letter-spacing: 0.03em;
+}
+.worklist-text:hover,
+.worklist-text:focus {
+  color: var(--white-color);
+}
+.worklist-title {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+}
+.worklist-p {
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+}
+.copyright {
+  color: var(--white-color);
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 2;
+  /* or 200% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
