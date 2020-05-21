@@ -14,7 +14,18 @@
   --accent-color: #2196f3;
   --white-color: #ffffff;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  margin: 0;
   background-color: #ffffff;
   color: var(--primary-text-color);
 
@@ -25,8 +36,60 @@ a {
 }
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: tomato;
+  outline: 2px solid brown;
+}
+.page-header {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+
+  margin-right: 0;
+
+  background-color: cadetblue;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+.site-nav {
+  margin-left: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: blueviolet;
+}
+.site-nav .list {
+  margin-left: 0;
+  display: flex;
+}
+.site-nav .item + .item {
+  /* background-color: darkgreen; */
+  margin-left: 50px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+
+  /* background-color: burlywood; */
+}
 .logoone {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -48,6 +111,9 @@ ul {
   letter-spacing: 0.03em;
 }
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -58,6 +124,18 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+}
+/* .auth-nav {
+  align-items: center;
+} */
+.auth-nav.list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.auth-nav .item + .item {
+  /* background-color: darkgreen; */
+  margin-left: 30px;
 }
 .auth-nav .link {
   color: var(--title-text-color);
@@ -93,6 +171,8 @@ ul {
 }
 /* Меняю цвет контактов в Футере */
 .adr {
+  margin-top: 10px;
+  margin-bottom: 0;
   color: var(--white-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -104,6 +184,7 @@ ul {
   letter-spacing: 0.03em;
 }
 .adr-mail {
+  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -143,9 +224,17 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-/* Меняю цыет текста в Герое */
+/* Меняю цвет текста в Герое */
+.hero {
+  text-align: center;
+}
 .hero-title {
+  margin-top: 200px;
+  margin-bottom: 0;
+
+  background-color: cornflowerblue;
   color: var(--white-color);
+
   font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 44px;
@@ -156,20 +245,99 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-link {
+.button {
+  display: inline-block;
+
+  background-color: var(--accent-color);
+  min-width: 50px;
+  padding: 10px 32px;
+
+  border-radius: 4px;
+  border-color: transparent;
+
   color: var(--white-color);
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* identical to box height, or 187% */
 
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 }
+.button.primary {
+  margin-top: 46px;
+  margin-bottom: 200px;
+}
 /* Добавляю повторяющиеся цвета цвет внутри некоторых секций */
+.advantages {
+  background-color: black;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  padding-top: 0;
+}
+.adv {
+  display: flex;
+  /* text-align: center; */
+  align-content: center;
+  padding-left: 0;
+}
+.adv > .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 278px;
+}
+
+.adv .section-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.adv .item + .item {
+  margin-left: 29px;
+  background-color: darkturquoise;
+}
+.advantages-title {
+  display: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.do {
+  display: flex;
+  margin-bottom: 94px;
+  padding-left: 0;
+}
+.do .item + .item {
+  margin-left: 30px;
+}
+.section.ourteam {
+  background-color: #afb1b8;
+}
+.members .team + .team {
+  margin-left: 30px;
+}
+.members {
+  display: flex;
+}
+/* .section.ourteam .maintitle {
+  display: inline-block;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
+} */
+.socwebs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.maintitle.wedo {
+  background-color: coral;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
 .section-title {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -189,6 +357,11 @@ ul {
   letter-spacing: 0.03em;
 }
 .maintitle {
+  padding-top: o;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -212,6 +385,18 @@ ul {
   color: var(--accent-color);
 }
 /* Уникальные стили для portfolio.html */
+.buttonportfolio {
+  display: flex;
+  justify-content: center;
+  padding-top: 99px;
+  padding-bottom: 56px;
+}
+.buttonportfolio .item + .item {
+  margin-left: 30px;
+}
+.titleworks {
+  display: none;
+}
 .button-text {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -222,13 +407,28 @@ ul {
 
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
 }
 .button-text:hover,
 .button-text:focus {
   color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards .item {
+  width: 370px;
+
+  border-radius: 5px;
+}
+.cards .item:nth-child(-n + 3) {
+  margin-right: 30px;
 }
 /* Отмечаю цветом однотипные фрагменты текста */
 .worklist-text {
+  display: none;
   color: rgba(255, 255, 255, 1);
   font-family: Roboto, sans-serif;
   font-size: 18px;
@@ -260,8 +460,53 @@ ul {
 
   letter-spacing: 0.03em;
 }
+.ourclients {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.clients {
+  display: flex;
+  justify-content: flex-start;
+}
+.items:not(:last-child) {
+  margin-right: 30px;
+
+  background-color: fuchsia;
+}
+.footer {
+  /* display: flex; */
+
+  background-color: #2f303a;
+}
+.footerdiv {
+  display: flex;
+  align-items: baseline;
+}
+.adress {
+  margin-top: 48px;
+  margin-bottom: 28px;
+}
+.city {
+  background-color: fuchsia;
+  margin-right: 69px;
+}
+.socials {
+  margin-right: 94px;
+}
+.mailform {
+  /* display: block; */
+}
+.button.secondary {
+  margin-top: 21px;
+  margin-bottom: 50px;
+  margin-right: 0;
+  margin-left: 464px;
+}
 .copyright {
-  color: var(--white-color);
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
   font-family: Roboto;
   font-size: 12px;
   line-height: 2;
